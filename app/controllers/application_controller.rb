@@ -30,6 +30,6 @@ class ApplicationController < ActionController::Base
   # нарушении доступа. Мы будем использовать этот метод, когда надо запретить
   # пользователю что-то.
   def reject_user
-    redirect_to root_path, alert: 'Вам сюда низя!'
+    redirect_to root_path, alert: 'You are not allowed here!'
   end
 end

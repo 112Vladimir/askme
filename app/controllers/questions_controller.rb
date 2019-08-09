@@ -62,7 +62,7 @@ class QuestionsController < ApplicationController
     @question.destroy
 
     # Отправляем пользователя на страницу адресата вопроса с сообщением
-    redirect_to user_path(user), notice: 'Вопрос удален :('
+    redirect_to user_path(user), notice: 'The question is deleted :('
   end
 
   private
